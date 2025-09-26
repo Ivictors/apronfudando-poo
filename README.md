@@ -18,4 +18,4 @@ O repositório está organizado por tópicos de estudo, facilitando a navegaçã
     *   `interfaces/`: Implementação e uso de interfaces para definir contratos e comportamentos.
     *   `excecoes/`: Estudo e aplicação de tratamento de exceções (checked e unchecked).
     *   `generics/`: Exercícios sobre o uso de tipos genéricos em classes e métodos.
-    *   `collections/`: Práticas com a API de Collections, como `List`, `Set`, `Map` e suas implementações.~~~~~~~~~~~~
+    *   `collections/`: Práticas com a API de Collections, como `List`, `Set`, `Map` e suas implementações.
