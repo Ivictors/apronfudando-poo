@@ -1,4 +1,4 @@
-package Enumeradores.dominio;
+package enumeradores.dominio;
 
 public enum TipoCliente {
     PESSOA_FISICA (1,"Pessoa Fisica"),

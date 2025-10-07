@@ -1,4 +1,4 @@
-package Enumeradores.dominio;
+package enumeradores.dominio;
 
 public class Produto {
     public String nome;

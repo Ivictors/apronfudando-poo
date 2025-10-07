@@ -1,6 +1,6 @@
-package Enumeradores.teste;
+package enumeradores.teste;
 
-import Enumeradores.dominio.Calculadora;
+import enumeradores.dominio.Calculadora;
 
 public class EnumTeste {
     public static void main(String[] args) {

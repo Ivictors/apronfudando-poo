@@ -1,6 +1,6 @@
-package Enumeradores.teste;
+package enumeradores.teste;
 
-import Enumeradores.dominio.PlanoSaude;
+import enumeradores.dominio.PlanoSaude;
 
 public class PlanoSaudeTeste {
     public static void main(String[] args) {

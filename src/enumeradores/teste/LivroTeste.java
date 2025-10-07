@@ -1,6 +1,6 @@
-package Enumeradores.teste;
+package enumeradores.teste;
 
-import Enumeradores.dominio.Livros;
+import enumeradores.dominio.Livros;
 
 import java.util.EnumSet;
 

@@ -1,6 +1,6 @@
-package Enumeradores.teste;
+package enumeradores.teste;
 
-import Enumeradores.dominio.StatusPedido;
+import enumeradores.dominio.StatusPedido;
 
 import java.util.Scanner;
 

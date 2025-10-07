@@ -1,11 +1,9 @@
-package Enumeradores.teste;
+package enumeradores.teste;
 
-import Enumeradores.dominio.Cliente;
-import Enumeradores.dominio.Produto;
-import Enumeradores.dominio.TipoCliente;
-import Enumeradores.dominio.TipoPagamento;
-
-import java.util.EnumSet;
+import enumeradores.dominio.Cliente;
+import enumeradores.dominio.Produto;
+import enumeradores.dominio.TipoCliente;
+import enumeradores.dominio.TipoPagamento;
 
 public class ClienteTeste {
     public static void main(String[] args) {

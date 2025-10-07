@@ -1,4 +1,4 @@
-package Enumeradores.dominio;
+package enumeradores.dominio;
 
 public enum StatusPedido {
     NOVO("Novo"){
