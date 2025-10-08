@@ -17,12 +17,14 @@ public class IdadeTeste {
             System.out.println("Acesso concedido.");
         } catch (IdadeInvalida e) {
             System.out.println("Ocorreu um erro: " + e.getMessage());
-        }finally {
+        } finally {
             sc.close();
         }
     }
+
+
     private static void verificaIdade(int idade) throws IdadeInvalida {
-        if (idade < 18){
+        if (idade < 18) {
             throw new IdadeInvalida("Acesso negado! este conteúdo não é permitido para menores de 18 anos.");
         }
     }
