@@ -18,6 +18,9 @@ public class Divisao0 {
         catch (DivisaoPorZero e){
             e.printStackTrace();
         }
+        finally {
+            sc.close();
+        }
     }
 
     public static int divide(int x, int y) throws DivisaoPorZero {
