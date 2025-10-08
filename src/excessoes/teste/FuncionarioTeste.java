@@ -5,11 +5,12 @@ import excessoes.dominio.IdadeInvalidaException;
 import excessoes.dominio.NomeInvalidoException;
 import excessoes.dominio.SalarioInvalidoException;
 
-import java.util.InputMismatchException;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class FuncionarioTeste {
     public static void main(String[] args) {
+        Locale.setDefault(Locale.ENGLISH);
         Scanner sc = new Scanner(System.in);
 
         boolean op = true;
@@ -26,16 +27,12 @@ public class FuncionarioTeste {
 
                 op = false;
 
-            } catch (NullPointerException e) {
-                throw new NomeInvalidoException("O nome não pode estar vazio");
-            } catch (IllegalArgumentException e) {
-                throw new IdadeInvalidaException("A idade deve ser maior ou igual a 16.");
-            } catch (InputMismatchException e) {
-                throw new SalarioInvalidoException("O salário deve ser maior que 0.");
+            } catch (NomeInvalidoException | IdadeInvalidaException | SalarioInvalidoException e) {
+                System.out.println("Erro: " + e.getMessage());
             } catch (RuntimeException e) {
-                throw new RuntimeException(e);
+                System.out.println("Entrada invalida!");;
             }
-
+            System.out.println("Por favor, tente novamente!");
         } while (op);
 
         sc.close();

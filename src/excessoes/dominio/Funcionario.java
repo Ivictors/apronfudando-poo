@@ -12,15 +12,15 @@ public class Funcionario {
 
     public Funcionario(String nome, int idade, double salario) throws NomeInvalidoException, IdadeInvalidaException, SalarioInvalidoException {
         if (nome == null || nome.trim().isEmpty()) {
-            throw new NullPointerException();
+            throw new NomeInvalidoException("O nome não pode estar vazio");
         }
         this.nome = nome;
         if (idade <= 16) {
-            throw new IllegalArgumentException();
+            throw new IdadeInvalidaException("A idade deve ser maior ou igual a 16.");
         }
         this.idade = idade;
         if (salario <= 0.0) {
-            throw new InputMismatchException();
+            throw new SalarioInvalidoException("O salário deve ser maior que 0.");
         }
         this.salario = salario;
     }

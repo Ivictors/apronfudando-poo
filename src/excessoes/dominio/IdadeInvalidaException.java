@@ -1,6 +1,6 @@
 package excessoes.dominio;
 
-public class IdadeInvalidaException extends RuntimeException {
+public class IdadeInvalidaException extends Exception {
 
     public IdadeInvalidaException() {
     }

@@ -1,6 +1,6 @@
 package excessoes.dominio;
 
-public class SalarioInvalidoException extends RuntimeException {
+public class SalarioInvalidoException extends Exception {
 
     public SalarioInvalidoException() {
     }

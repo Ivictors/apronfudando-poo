@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class ProdutoTeste01 {
     public static void main(String[] args) {
 
-        Locale.setDefault(new Locale("pt", "BR"));
+        Locale.setDefault(Locale.of("pt", "BR"));
         Scanner sc = new Scanner(System.in);
 
         boolean op = true;

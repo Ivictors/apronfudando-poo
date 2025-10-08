@@ -1,6 +1,6 @@
 package excessoes.dominio;
 
-public class NomeInvalidoException extends RuntimeException {
+public class NomeInvalidoException extends Exception {
 
     public NomeInvalidoException() {
 

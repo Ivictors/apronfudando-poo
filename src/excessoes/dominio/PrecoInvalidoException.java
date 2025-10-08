@@ -1,6 +1,6 @@
 package excessoes.dominio;
 
-public class PrecoInvalidoException extends RuntimeException {
+public class PrecoInvalidoException extends Exception {
 
     public PrecoInvalidoException() {
     }

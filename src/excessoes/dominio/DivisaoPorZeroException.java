@@ -1,6 +1,6 @@
 package excessoes.dominio;
 
-public class DivisaoPorZeroException extends RuntimeException {
+public class DivisaoPorZeroException extends Exception {
 
     public DivisaoPorZeroException() {
     }
