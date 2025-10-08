@@ -1,6 +1,6 @@
 package excessoes.teste;
 
-import excessoes.dominio.IdadeInvalida;
+import excessoes.dominio.IdadeInvalidaException;
 
 import java.util.Scanner;
 
@@ -15,7 +15,7 @@ public class IdadeTeste {
         try {
             verificaIdade(idade);
             System.out.println("Acesso concedido.");
-        } catch (IdadeInvalida e) {
+        } catch (IdadeInvalidaException e) {
             System.out.println("Ocorreu um erro: " + e.getMessage());
         } finally {
             sc.close();
@@ -23,9 +23,9 @@ public class IdadeTeste {
     }
 
 
-    private static void verificaIdade(int idade) throws IdadeInvalida {
+    private static void verificaIdade(int idade) throws IdadeInvalidaException {
         if (idade < 18) {
-            throw new IdadeInvalida("Acesso negado! este conteúdo não é permitido para menores de 18 anos.");
+            throw new IdadeInvalidaException("Acesso negado! este conteúdo não é permitido para menores de 18 anos.");
         }
     }
 }

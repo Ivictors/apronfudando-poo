@@ -1,7 +1,7 @@
 package excessoes.teste;
 
 
-import excessoes.dominio.DivisaoPorZero;
+import excessoes.dominio.DivisaoPorZeroException;
 
 import java.util.Scanner;
 
@@ -15,7 +15,7 @@ public class Divisao0 {
         try {
             divide(x, y);
         }
-        catch (DivisaoPorZero e){
+        catch (DivisaoPorZeroException e){
             e.printStackTrace();
         }
         finally {
@@ -23,11 +23,11 @@ public class Divisao0 {
         }
     }
 
-    public static int divide(int x, int y) throws DivisaoPorZero {
+    public static int divide(int x, int y) throws DivisaoPorZeroException {
         try{
             return x / y;
         } catch (ArithmeticException e){
-            throw new DivisaoPorZero("Argumento invalido, não é possivel dividir um inteiro por 0.");
+            throw new DivisaoPorZeroException("Argumento invalido, não é possivel dividir um inteiro por 0.");
         }
     }
 }

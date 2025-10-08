@@ -7,10 +7,10 @@ public class Produto {
     public Produto() {
     }
 
-    public Produto(String nome, double preco) throws PrecoInvalido {
+    public Produto(String nome, double preco) throws PrecoInvalidoException {
         this.nome = nome;
         if (preco <= 0.0){
-            throw new PrecoInvalido("Preço invalido, informe um valor positivo.");
+            throw new PrecoInvalidoException("Preço invalido, informe um valor positivo.");
         }
         this.preco = preco;
     }

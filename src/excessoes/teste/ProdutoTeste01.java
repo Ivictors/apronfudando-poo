@@ -1,6 +1,6 @@
 package excessoes.teste;
 
-import excessoes.dominio.PrecoInvalido;
+import excessoes.dominio.PrecoInvalidoException;
 import excessoes.dominio.Produto;
 import java.util.InputMismatchException;
 import java.util.Locale;
@@ -27,7 +27,7 @@ public class ProdutoTeste01 {
                 op = false;
 
             }
-            catch (PrecoInvalido e) {
+            catch (PrecoInvalidoException e) {
                 sc.nextLine();
                 System.out.println("Erro: " + e.getMessage());
             }
