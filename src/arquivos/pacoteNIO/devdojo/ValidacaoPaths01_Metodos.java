@@ -4,7 +4,7 @@ package arquivos.pacoteNIO.devdojo;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class MetodosPaths {
+public class ValidacaoPaths01_Metodos {
     public static void main(String[] args) {
         //Normalize
         String path1 = ("estudo/vitu/marques");

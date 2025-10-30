@@ -1,4 +1,4 @@
-package arquivos.pacoteNIO.devdojo.exemplo1;
+package arquivos.pacoteNIO.devdojo;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -6,7 +6,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 
-public class IntroducaoCriacoesTeste {
+public class IntroducaoNIOTeste01 {
     public static void main(String[] args) throws IOException {
         Path directory = Paths.get("pasta1");
         if (Files.notExists(directory)) {
