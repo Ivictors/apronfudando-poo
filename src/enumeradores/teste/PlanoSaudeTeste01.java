@@ -1,0 +1,14 @@
+package enumeradores.teste;
+
+import enumeradores.dominio.PlanoSaude;
+
+public class PlanoSaudeTeste01 {
+    public static void main(String[] args) {
+        for (PlanoSaude planoSaude : PlanoSaude.values()){
+            System.out.println("Tipo de Plano: " + planoSaude);
+            System.out.println("Mensalidade: " + planoSaude.getMensalidade());
+            System.out.println("Plano Anual: " + planoSaude.valorAnual());
+            System.out.println();
+        }
+    }
+}

@@ -8,7 +8,6 @@ public class WriterTeste01 {
         String[] palavras = {"Ola"};
 
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(file))) {
-
                 for (int i = 0; i < palavras.length; i++) {
                     bw.write(palavras[i]);
             }
