@@ -16,6 +16,5 @@ public class MidiasTeste01 {
         podcastBiblioteca.add(podcast3);
 
         podcastBiblioteca.objetosMidia();
-
     }
 }
