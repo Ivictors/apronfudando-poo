@@ -1,0 +1,14 @@
+services:
+  db:
+    image: mysql:8.4.0
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: VictorDev05.
+      MYSQL_DATABASE: anime_store
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:

@@ -16,6 +16,5 @@ public class Produto {
                 "nome='" + nome + '\'' +
                 ", valor=" + valor +
                 '}';
-
     }
 }
